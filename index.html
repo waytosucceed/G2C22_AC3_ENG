@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+</head>
+
+<style>
+  .activity {
+    width: 100%;
+    height: auto;
+    background-color: rgb(156, 225, 247);
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .activity p {
+    font-size: 18px;
+  }
+
+  #img-area {
+    width: 40%;
+
+
+  }
+
+  #content-area {
+    width: 60%;
+
+  }
+
+  #heading {
+    font-family: Harrington;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  table,
+  th,
+  td {
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 29px;
+  }
+  button {
+    padding: 10px 20px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Increase button text size */
+}
+.example{
+  display: flex;
+  gap:  1rem;
+margin: 0;
+  li{
+  list-style: none;
+}
+
+}
+
+</style>
+
+</style>
+
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  <br>
+  <audio id="hot" src="./sounds/hot.mp3"></audio>
+<audio id="pot" src="./sounds/pot.mp3"></audio>
+<audio id="sock" src="./sounds/sock.mp3"></audio>
+
+<audio id="rope" src="./sounds/rope.mp3"></audio>
+<audio id="cone" src="./sounds/cone.mp3"></audio>
+<audio id="tone" src="./sounds/tone.mp3"></audio>
+
+<audio id="boat" src="./sounds/boat.mp3"></audio>
+<audio id="goat" src="./sounds/goat.mp3"></audio>
+<audio id="toast" src="./sounds/toast.mp3"></audio>
+
+  
+  <center>
+    <h1 id="heading">What did I learn?</h1>
+    <span style="font-size:1.5rem; color: rgb(154, 34, 240); font-weight: 600;">    We learned about words with “O” and “OO” and their pronunciation.
+    </span><br>
+
+  </center>
+  <div class="container " style="font-size: 22px;">
+    <p style="text-align: left;">
+      <p class="text-start">
+        <span style="color: rgb(154, 34, 240); font-weight: 600;"><u>Single “O”</u></span><br>
+        👉 When the letter “O” is followed just by consonants, “O” does not say its name. It makes a short “aw” sound.<br>
+       <ul class="example">
+        For example:
+
+            <li><button onclick="playSound('hot')">📢 hot</button></li>
+            <li><button onclick="playSound('pot')">📢 pot</button></li>
+            <li><button onclick="playSound('sock')">📢 sock</button></li>
+        </ul>
+       
+    <hr>
+        👉 When the letter “O” is followed by a consonant and a silent “E,” the letter “O” says its name. It makes a long “O” sound.<br>
+       <ul class="example">
+        For example:
+
+            <li><button onclick="playSound('rope')">📢 rope</button></li>
+            <li><button onclick="playSound('cone')">📢 cone</button></li>
+            <li><button onclick="playSound('tone')">📢 tone</button></li>
+        </ul>
+      
+    <hr>
+        👉 When the letter “O” is followed by another vowel, the two vowels make a vowel team. In vowel teams that start with “O,” the letter “O” says its name. It makes a long “O” sound. The other vowel is silent.<br>
+       <ul class="example">
+        For example:
+
+            <li><button onclick="playSound('boat')">📢 boat</button></li>
+            <li><button onclick="playSound('goat')">📢 goat</button></li>
+            <li><button onclick="playSound('toast')">📢 toast</button></li>
+        </ul>
+        <br>
+    </p>
+    
+
+    <div style="display: flex; justify-content: center;">
+    <a href="index2.html" class="btn btn-primary mb-5 btn-lg- text-center"
+      style="height: 50px; width: 200px; font-size: 22px;">Double “OO”</a>
+    </div>
+</div>
+
+<script>
+  
+  function playSound(soundId) {
+      var audio = document.getElementById(soundId);
+      if (audio) {
+        audio.play();
+      }
+    }
+   
+   
+</script>
+</body>
+
+</html>
